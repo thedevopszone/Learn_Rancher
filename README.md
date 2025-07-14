@@ -1,5 +1,11 @@
 # Learn Rancher
 
+```
+sudo cat /var/lib/rancher/rke2/server/node-token
+K10545039017ecb1fa142e822e56e77c25b57970431de64c5c888104b2780109acc::server:f966d0489b1cf5b776e9ac08ace4c626
+```
+
+
 First Node
 ```
 curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="server" K3S_TOKEN=some-auth-token K3S_CLUSTER_INIT=1 sh -
