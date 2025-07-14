@@ -5,6 +5,7 @@ First Node
 curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="server" K3S_TOKEN=some-auth-token K3S_CLUSTER_INIT=1 sh -
 
 export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+alias k=kubectl
 
 sudo cat /var/lib/rancher/k3s/server/node-token
 
