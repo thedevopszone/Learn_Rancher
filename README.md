@@ -1,5 +1,12 @@
 # Learn Rancher
 
+
+- 3 Nodes
+- selinux
+- hostnames
+
+
+
 ```
 sudo cat /var/lib/rancher/rke2/server/node-token
 K10545039017ecb1fa142e822e56e77c25b57970431de64c5c888104b2780109acc::server:f966d0489b1cf5b776e9ac08ace4c626
