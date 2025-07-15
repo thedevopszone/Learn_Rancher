@@ -82,6 +82,18 @@ k get ingress -m cattle-system
 
 
 
+## Certificates
+
+```
+wget https://github.com/acmesh-official/acme.sh
+
+./acme.sh --register-account -m tmundt@softxpert.de
+
+./acme.sh --issue -d '*.devopszone.de' --dns --yes-I-know-dns-manual-mode-enough-go-ahead-please
+
+
+```
+
 
 
 
