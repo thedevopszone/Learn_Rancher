@@ -59,13 +59,17 @@ helm repo add jetstack https://charts.jetstack.io
 helm upgrade --install cert-manager jetstack/cert-manager --namespace cert-manager --set installCRDs=true --version v1.7.1 --create-namespace
 ```
 
+## Install Rancher
 
 ```
 helm repo add rancher-latest https://releases.rancher.com/server-charts/latest
 ```
 
 ```
-helm upgrade --install rancher rancher-latest/rancher --namespace cattle-system --version v2.6.4 --set hostname=rancher.softxpert.duckdns.org --create-namespace --set ingress.tls.source=letsEncrypt
+helm upgrade --install rancher rancher-latest/rancher --namespace cattle-system --set bootstrapPassword=admin   --set hostname=rancher.softxpert.duckdns.org --create-namespace --set ingress.tls.source=letsEncrypt
+
+
+--set ngress.tls.source=secret
 ```
 
 ```
